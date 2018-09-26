@@ -1,0 +1,116 @@
+@import "base.less";
+
+/* 头部 */
+
+#header {
+    background-color: #f2f2f2;
+    position: fixed;
+    width: 100%;
+    >.header-wrapper {
+        display: flex;
+        line-height: 30px;
+        padding: 10px 0px;
+        >.icon-logo {
+            color: @mainColor;
+            margin: 0px 10px;
+            >.icon-xiaomi {
+                font-size: 24px;
+            }
+        }
+        >form {
+            flex: 1;
+            position: relative;
+            >input {
+                width: 100%;
+                background-color: #fff;
+                padding-left: 3px;
+                height: 30px;
+                padding-left: 30px;
+            }
+            >.icon-41 {
+                position: absolute;
+                top: 0px;
+                left: 7px;
+            }
+        }
+        >.login {
+            width: 50px;
+            text-align: center;
+            >.icon-yonghu {
+                font-size: 24px;
+            }
+        }
+    }
+    >.nav {
+        overflow: auto;
+        >ul {
+            width: 1000px;
+            font-size: 14px;
+            >li {
+                line-height: 32px;
+                float: left;
+                padding: 0px 12px;
+                text-align: center;
+                &.action {
+                    >a {
+                        display: block;
+                        border-bottom: 2px solid @mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 轮播 */
+
+#slide {
+    padding-top: 87px;
+    .swiper-slide {
+        >a {
+            >img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/* 导航 */
+
+#nav {
+    >ul {
+        display: flex;
+        >li {
+            width: 20%;
+            >a {
+                display: block;
+                >img {
+                    width: 72px;
+                    height: 76px;
+                }
+            }
+        }
+    }
+}
+
+
+/* 主体 */
+
+#main {
+    background-color: #f2f2f2;
+    padding: 8px 0px;
+    >.pro-new {
+        display: flex;
+        >div {
+            flex: 1;
+            >a {
+                display: block;
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

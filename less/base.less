@@ -1,0 +1,60 @@
+/* 定义全局变量 */
+
+@mainColor: #ff6b00;
+@a-color: #666;
+@border-color: #d1d1d1;
+
+/* 公共的样式放到base.less里面 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* 防止边框padding超出页面宽度出现滚动条 */
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: @a-color;
+    text-decoration: none;
+    /*一般移动端清除a的点击高亮  透明就表示去掉*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+    border: none;
+    outline: none;
+    /*清除移动端默认的表单样式*/
+    -webkit-appearance: none;
+}
+
+img {
+    /* 解决图片3px的间距 */
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.border-left {
+    border-left: 1px solid @border-color;
+}
+
+.border-right {
+    border-right: 1px solid @border-color;
+}
+
+.border-top {
+    border-top: 1px solid @border-color;
+}
+
+.border-bottom {
+    border-bottom: 1px solid @border-color;
+}
